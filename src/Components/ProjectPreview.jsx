@@ -1,25 +1,21 @@
 import React from "react";
 import "./ProjectPreview.css";
-import Project from "./Projects";
 
 const projects = [
   {
     title: "Todo App",
     description: "A React-based todo manager with localStorage support.",
-    link: "https://github.com/yourusername/todo-app",
-    tech: ["React", "JavaScript", "CSS"]
+    link: "https://github.com/yourusername/todo-app"
   },
   {
     title: "Portfolio Website",
     description: "A personal portfolio built with React and Tailwind CSS.",
-    link: "https://yourportfolio.com",
-    tech: ["React", "Tailwind", "Vite"]
+    link: "https://yourportfolio.com"
   },
   {
     title: "Employee Management System",
-    description: "Spring Boot app for managing employees with CRUD operations, connected to MySQL.",
-    link: "https://github.com/yourusername/employee-management",
-    tech: ["Java", "Spring Boot", "MySQL"]
+    description: "Java Spring Boot app for managing employee data with MySQL backend.",
+    link: "https://github.com/yourusername/employee-management"
   }
 ];
 
@@ -29,13 +25,13 @@ const ProjectPreview = () => {
       <h2>Featured Projects</h2>
       <div className="project-cards">
         {projects.map((project, index) => (
-          <Project
-            key={index}
-            title={project.title}
-            description={project.description}
-            link={project.link}
-            tech={project.tech}
-          />
+          <div key={index} className="project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              View Project →
+            </a>
+          </div>
         ))}
       </div>
     </section>
