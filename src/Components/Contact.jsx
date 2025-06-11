@@ -26,9 +26,9 @@ export default function Contact() {
       </div>
 
       <div className="contact-icons">
-        <a href="mailto:narasimharao@example.com"><FaEnvelope /></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer"><FaGithub /></a>
+        <a href="mailto:mudhenanarasimharao@gmail.com"><FaEnvelope /></a>
+        <a href="https://www.linkedin.com/in/narasimharao-mudhena-42079726a/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+        <a href="https://github.com/Narasimha0001" target="_blank" rel="noreferrer"><FaGithub /></a>
       </div>
 
       {/* Optional Form */}
